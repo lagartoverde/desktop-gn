@@ -1,0 +1,26 @@
+<Editor
+  @rdfaEditorInit={{this.editorInit}}
+  @schema={{this.schema}}
+  @plugins={{this.plugins}}
+  @editorOptions={{hash 
+    showToggleRdfaAnnotations="true" 
+    showRdfa="true" 
+    showRdfaHighlight="true" 
+    showRdfaHover="true" 
+    showPaper="true" 
+    showSidebar="true" 
+    showToolbarBottom=null
+  }}
+  @toolbarOptions={{hash 
+    showTextStyleButtons="true" 
+    showListButtons="true" 
+    showIndentButtons="true"
+  }}
+>
+  <:top>
+    <EditorToolbar @controller={{this.rdfaEditor}}/>
+  </:top>
+  <:aside>
+    {{!-- Content which is placed on the right side of the editor --}}
+  </:aside>
+</Editor>

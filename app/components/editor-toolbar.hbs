@@ -1,0 +1,20 @@
+<Toolbar>
+  <:left>
+    <Toolbar::Group>
+      <Toolbar::History::Undo @controller={{@controller}}/>
+      <Toolbar::History::Redo @controller={{@controller}}/>
+    </Toolbar::Group>
+    <Toolbar::Group>
+      <Toolbar::Marks::Bold @controller={{@controller}}/>
+      <Toolbar::Marks::Italic @controller={{@controller}}/>
+      <Toolbar::Marks::Strikethrough @controller={{@controller}}/>
+      <Toolbar::Marks::Underline @controller={{@controller}}/>
+    </Toolbar::Group>
+    <Toolbar::Group>
+      <Toolbar::TableMenu @controller={{@controller}}/>
+    </Toolbar::Group>
+  </:left>
+  <:right>
+    {{!-- Buttons which are placed on the right side in the toolbar --}}
+  </:right>
+</Toolbar>
